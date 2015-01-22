@@ -32,15 +32,6 @@ body {
     animation: box-rotate 6s linear infinite;
 }
 
-.ship {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    bottom:100px;
-    right:150px; 
-    animation: box-rotate 3s ease-in-out infinite alternate;
-}
-
 @keyframes box-rotate {
     
 0% {
@@ -50,4 +41,28 @@ body {
 100% {
         transform: rotate(360deg);
 }
+}
+
+.ship {
+    position: absolute;
+    right:100px; 
+    top:400px;
+    animation: bounce 3000ms ease infinite alternate;
+}
+
+
+@keyframes bounce {
+  
+0% {
+        transform: translateY(0);}    
+50% {
+        transform: translateY(500px);}
+65% {
+        transform: translateY(170px);}
+75% {
+        transform: translateX(-500px);}
+86.75% {
+        transform: translateY(170px);}
+100% {
+        transform: translateY(500px);}
 }
