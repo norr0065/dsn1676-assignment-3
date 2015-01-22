@@ -18,10 +18,15 @@ html {
 }
 
 body {
-    background-image: url(images/stars.svg);
     background-color: black;
 }
 
+.stars {
+    background-image: url(images/stars.svg);
+    width:100%;
+    height:100vh;
+    transform: scale(2, 2) 3s ease infinite alternate ;
+}
 
 .asteroid {
     position: absolute;
@@ -46,7 +51,7 @@ body {
 .ship {
     position: absolute;
     right:100px; 
-    top:400px;
+    top:100px;
     animation: bounce 3000ms ease infinite alternate;
 }
 
