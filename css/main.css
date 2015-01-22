@@ -1,0 +1,53 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+    
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+     text-size-adjust: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    background-image: url(images/stars.svg);
+    background-color: black;
+}
+
+
+.asteroid {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top:200px;
+    left:200px;
+    animation: box-rotate 6s linear infinite;
+}
+
+.ship {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom:100px;
+    right:150px; 
+    animation: box-rotate 3s ease-in-out infinite alternate;
+}
+
+@keyframes box-rotate {
+    
+0% {
+        transform: rotate(0deg);
+}
+
+100% {
+        transform: rotate(360deg);
+}
+}
